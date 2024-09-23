@@ -5,7 +5,7 @@ import appStore from './utils/appStore.js';
 
 function App() {
   return <Provider store={appStore}>
-    <Body /> {/* //This is a Body  */}
+    <Body /> {/* //This is a Body body */}
   </Provider>;
 }
 export default App;
