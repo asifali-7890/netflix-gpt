@@ -1,12 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Body from './components/Body.js';
+import { Provider } from 'react-redux';
+import appStore from './utils/appStore.js';
 
 function App() {
-  return (
-    <div className="text-3xl font-bold text-green-800">
-      HelloWorld...
-    </div>
-  );
+  return <Provider store={appStore}>
+    <Body />
+  </Provider>;
 }
-
 export default App;
